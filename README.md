@@ -3,12 +3,12 @@
 **A comprehensive set of rules and guidelines for AI-assisted development in Cursor IDE**
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Language](https://img.shields.io/badge/language-English-green.svg)
-![Platform](https://img.shields.io/badge/platform-Cursor%20IDE-purple.svg)
+![Platform](https://img.shields.io/badge/platform-Cursor%20IDE-black.svg)
+![Artemonim](https://img.shields.io/badge/Artemonim's-Agent%20Tools-purple.svg)
 
 ## Overview
 
-Agent Compass is not just another AI prompt - it's a complete **Policy Framework for AI-Assisted Development**. Think of it as a "Constitution" for your AI coding assistant that transforms it from a simple code generator into a disciplined, professional developer who follows best practices, security standards, and architectural principles.
+Agent Compass is not just another AI prompt — it's a complete **Policy Framework for AI-Assisted Development**. Think of it as a "Constitution" for your AI coding assistant that transforms it from a simple code generator into a disciplined, professional developer who follows best practices, security standards, and architectural principles.
 
 ### What Makes Agent Compass Special?
 
@@ -18,6 +18,14 @@ Agent Compass is not just another AI prompt - it's a complete **Policy Framework
 -   **📝 Smart Commenting Standards**: Enforces Better Comments style and A-temporal documentation
 -   **🎯 Proactive Evaluation**: AI evaluates your technical approaches and suggests alternatives when appropriate
 -   **🔧 Language-Specific Guidelines**: Tailored rules for Python, JavaScript, TypeScript, C#, C++, and PowerShell
+
+## Part of the Artemonim's Agent Tools Ecosystem
+
+Agent Compass is part of the larger **[Artemonim's Agent Tools](https://github.com/Artemonim/AgentTools)** ecosystem:
+
+-   **[Agent Docstrings](https://github.com/Artemonim/AgentDocstrings)** — Helps AI understand your codebase structure
+-   **Agent Enforcer** _(Coming July 2025)_ — Automated code quality verification
+-   **Agent Viewport** _(Coming summer 2025)_ — UI markup understanding for AI assistants
 
 ## Who Is This For?
 
@@ -32,10 +40,9 @@ Agent Compass is not just another AI prompt - it's a complete **Policy Framework
 
 1. Open Cursor IDE
 2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
-3. Type "Cursor: Configure User Rules" and select it
-4. Copy the contents of [`COMPASS.md`](./COMPASS.md) from this repository
-5. Paste the content into the rules editor
-6. Save and close
+3. Type `View User Rules` and select it
+4. Copypaste the contents of [`COMPASS.md`](./COMPASS.md) from this repository
+5. Save and close
 
 ### Verification
 
@@ -44,13 +51,13 @@ After installation, start a new chat with your AI assistant and give it a coding
 -   More structured responses
 -   Better code quality
 -   Detailed reports at the end of each interaction
--   Consistent commenting and documentation
+-   More consistent commenting and documentation
 
 ## Key Features
 
 ### 🎯 Role-Based Interaction
 
-The AI operates as your "Developer" while you remain the "Software Architect", creating a clear hierarchy and responsibility structure.
+The AI operates as your "Developer" while you remain the "Software Architect" — each of you has a role to play, not just AI.
 
 ### 📊 Structured Output Format
 
@@ -61,6 +68,10 @@ Every AI response ends with a comprehensive report including:
 -   **Manual Changes Required**: Operations requiring your intervention
 -   **Special Attention Required**: Critical aspects needing review
 -   **Rationale for Deviations**: Explanations for significant design decisions
+
+> You may notice that it called with russian `отчёт по форме`. I recommend either leaving it as it is, or translating it into your non-English language. LLM started to be much stricter about this rule after such a modification, so I think they're paying a lot of attention to a sudden different language.
+
+> Also, you should not translate the whole Compass into your own language — English is the most compact and most understandable for most LLMs.
 
 ### 🔐 Security & Best Practices
 
@@ -148,13 +159,19 @@ However, if you anticipate rapid scaling or have specific service isolation requ
 -   Safe string concatenation with `-f` operator
 -   Proper error handling patterns
 
-## Part of the Agent Tools Ecosystem
+## Support the Project
 
-Agent Compass is part of the larger **Artemonim's Agent Tools** ecosystem:
+Agent Compass is an independent open-source project. If you find this useful and want to support my projects, your help would be greatly appreciated.
 
--   **[Agent Docstrings](https://github.com/Artemonim/AgentDocstrings)** - Helps AI understand your codebase structure
--   **Agent Enforcer** _(Coming Soon)_ - Automated code quality verification
--   **Agent Viewport** _(Coming Soon)_ - UI markup understanding for AI assistants
+Here are a few ways you can contribute:
+
+-   **Give a Star:** The simplest way to show your support is to star the project on [GitHub](https://github.com/Artemonim/AgentCompass)! It increases the project's visibility.
+-   **Support My Work:** Your financial contribution helps me dedicate more time to improving this tool and creating other open-source projects. On my [**Boosty page**](https://boosty.to/artemonim), you can:
+    -   Make a **one-time donation** to thank me for this specific project.
+    -   Become a **monthly supporter** to help all of my creative endeavors.
+-   **Try a Recommended Tool:** This project was inspired by my work with LLMs. If you're looking for a great service to work with multiple neural networks, check out [**Syntx AI**](https://t.me/syntxaibot?start=aff_157453205). Using my referral link is another way to support my work at no extra cost to you.
+
+Thank you for your support!
 
 ## Contributing
 
@@ -162,13 +179,7 @@ We welcome contributions! Please see our [Contributing Guidelines](./CONTRIBUTIN
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
-## Support
-
-If you find Agent Compass helpful, please ⭐ star this repository and share it with other developers!
-
-For questions, issues, or suggestions, please open an issue in this repository.
+This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
 
 ---
 
