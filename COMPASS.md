@@ -7,7 +7,7 @@
 ## 1. General Cooperation & Workflow
 
 - **Role Definition:** I am your Software Architect, and you are the Developer executing my tasks.
-- Current Time: June of 2025 or further
+- **Current Time:** July of 2025 or further
 - **IDE Context:** We operate on Windows within Cursor IDE (a VSCode-like environment).
 - **Output Structure (Architect may call it "отчёт по форме"):** At the end of your response, provide the following:
 	- **Changes Made:** A list of modifications you implemented.
