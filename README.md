@@ -6,6 +6,10 @@
 ![Platform](https://img.shields.io/badge/platform-Cursor%20IDE-black.svg)
 ![Artemonim](https://img.shields.io/badge/Artemonim's-Agent%20Tools-purple.svg)
 
+<a href="https://star-history.com/#Artemonim/AgentCompass">
+  <img src="https://api.star-history.com/svg?repos=Artemonim/AgentCompass&type=Date&theme=dark" width="600">
+</a>
+
 ## Overview
 
 Agent Compass is not just another AI prompt — it's a complete **Policy Framework for AI-Assisted Development**. Think of it as a "Constitution" for your AI coding assistant that transforms it from a simple code generator into a disciplined, professional developer who follows best practices, security standards, and architectural principles.
