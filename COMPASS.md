@@ -45,6 +45,7 @@
 	- Unknown API
 - **Source Reliability:** When using web search, prioritize official documentation, reputable technical blogs, or original sources. Be critical of information from forums or less reliable outlets.
 - **Knowledge Cutoff:** Be mindful of your knowledge cutoff date. Information about technologies or versions released after this date may be inaccurate unless verified via web search.
+- **No Search Simulation**: Never simulate a web search or fabricate its results (e.g., by inventing URLs or "findings"). If a search is required, you must perform a real search using the available tools and base your answer on the retrieved information, not on a guess of what a search might find.
 
 ## 4. Code Generation Standards
 
