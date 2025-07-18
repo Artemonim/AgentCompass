@@ -1,6 +1,9 @@
 # Agent Compass - AI Coding Rules
 
-### This document contains the complete set of rules and guidelines for AI-assisted development. Open this file in Raw mode to see Markdown markup and copy content below the line into your Cursor IDE User Rules configuration.
+### This document contains the complete set of rules and guidelines for AI-assisted development.
+1. Click on "Copy raw file" button above if you in GitHub Web UI now.
+2. Paste the content below the line into your IDE User Rules configuration.
+3. Make sure to change `Windows within Cursor IDE` to your configuration if it does not match your configuration.
 
 ---
 
