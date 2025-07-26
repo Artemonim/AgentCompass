@@ -28,7 +28,7 @@ Agent Compass is not just another AI prompt — it's a complete **Policy Framewo
 Agent Compass is part of the larger **[Artemonim's Agent Tools](https://github.com/Artemonim/AgentTools)** ecosystem:
 
 -   **[Agent Docstrings](https://github.com/Artemonim/AgentDocstrings)** — Helps AI understand your codebase structure
--   **Agent Enforcer** _(Coming July 2025)_ — Automated code quality verification
+-   **[Agent Enforcer](https://github.com/Artemonim/AgentEnforcer)** — Automated code quality verification
 -   **Agent Viewport** _(Coming summer 2025)_ — UI markup understanding for AI assistants
 
 ## Who Is This For?
