@@ -27,9 +27,9 @@ Agent Compass is not just another AI prompt — it's a complete **Policy Framewo
 
 Agent Compass is part of the larger **[Artemonim's Agent Tools](https://github.com/Artemonim/AgentTools)** ecosystem:
 
--   **[Agent Docstrings](https://github.com/Artemonim/AgentDocstrings)** — Helps AI understand your codebase structure
--   **[Agent Enforcer](https://github.com/Artemonim/AgentEnforcer)** — Automated code quality verification
--   **Agent Viewport** _(Coming summer 2025)_ — UI markup understanding for AI assistants
+-   **[Agent Docstrings (Archived)](https://github.com/Artemonim/AgentDocstrings)** — File-level structure summaries (legacy)
+-   **[Agent Enforcer 2](https://github.com/Artemonim/AgentEnforcer2)** — Local CI blueprint and reference architecture
+-   **Agent Viewport** _(On Hold / Uncertain)_ — UI markup understanding concept for AI assistants
 
 ## Who Is This For?
 
@@ -167,13 +167,10 @@ However, if you anticipate rapid scaling or have specific service isolation requ
 
 Agent Compass is an independent open-source project. If you find this useful and want to support my projects, your help would be greatly appreciated.
 
-Here are a few ways you can contribute:
+You can support my work in two ways:
 
--   **Give a Star:** The simplest way to show your support is to star the project on [GitHub](https://github.com/Artemonim/AgentCompass)! It increases the project's visibility.
--   **Support My Work:** Your financial contribution helps me dedicate more time to improving this tool and creating other open-source projects. On my [**Boosty page**](https://boosty.to/artemonim), you can:
-    -   Make a **one-time donation** to thank me for this specific project.
-    -   Become a **monthly supporter** to help all of my creative endeavors.
--   **Try a Recommended Tool:** This project was inspired by my work with LLMs. If you're looking for a great service to work with multiple neural networks, check out [**Syntx AI**](https://t.me/syntxaibot?start=aff_157453205). Using my referral link is another way to support my work at no extra cost to you.
+-   **Give a Star:** Star the repositories you use on GitHub.
+-   **Support on Sponsr:** Support me on [Sponsr](https://sponsr.ru/artemonim/).
 
 Thank you for your support!
 
