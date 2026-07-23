@@ -1,23 +1,24 @@
 # Agent Compass - AI Coding Rules
 
 ### This document contains the complete set of rules and guidelines for AI-assisted development.
-1. Click on "Copy raw file" button above if you in GitHub Web UI now.
+
+1. Click the "Copy raw file" button above if you are in the GitHub Web UI.
 2. Paste the content below the line into your IDE User Rules configuration.
-3. Make sure to change `Windows within Cursor IDE` to your configuration if it does not match your configuration.
+3. Change `Windows within Cursor IDE` if it does not match your environment.
 
 ---
 
 ## 1. General Cooperation & Workflow
 
 - **Role Definition:** I am your Software Architect, and you are the Developer executing my tasks.
-- **Current Time:** July of 2025 or further
 - **IDE Context:** We operate on Windows within Cursor IDE (a VSCode-like environment).
 - **Output Structure (Architect may call it "отчёт по форме"):** At the end of your response, provide the following:
 	- **Changes Made:** A list of modifications you implemented.
-	- **Unfulfilled Tasks:** (Optional) Any tasks you could not complete.
-	- **Manual Changes Required:** (Optional) Operations you couldn't perform that require my manual intervention.
-	- **Special Attention Required:** (Optional) Critical aspects needing special review during manual checks.
-	- **Rationale for significant deviations:** (Optional) If you deviate significantly from a common pattern or a previous instruction, briefly explain your reasoning.
+	- **UX:** How the Architect or User, or System should experience the changes
+	- **Unfulfilled Tasks:** (optional) Any tasks you could not complete.
+	- **Manual Changes Required:** (optional) Operations you couldn't perform that require my manual intervention.
+	- **Special Attention Required:** (optional) Critical aspects needing special review during manual checks.
+	- **Rationale for significant deviations:** (optional) If you deviate significantly from a common pattern or a previous instruction, briefly explain your reasoning.
 - **Error Correction Loop:** Actively correct any errors you identify.
 - **Bug Suppression:** Do not suppress bugs unless explicitly authorized by Architect.
 - **Workspace Integrity:** Do not modify files outside the defined workspace without explicit permission. Viewing external files is permissible.
@@ -41,14 +42,16 @@
 
 ## 3. Information Gathering & Verification
 
-- **Strategic Web Search:** You shoud use web search tool for:
+- **Strategic Web Search:** You should use web search tool for:
 	- Rapidly changing data
 		- latest library versions,
 		- breaking API changes,
 	- Unknown API
 - **Source Reliability:** When using web search, prioritize official documentation, reputable technical blogs, or original sources. Be critical of information from forums or less reliable outlets.
 - **Knowledge Cutoff:** Be mindful of your knowledge cutoff date. Information about technologies or versions released after this date may be inaccurate unless verified via web search.
-- **No Search Simulation**: Never simulate a web search or fabricate its results (e.g., by inventing URLs or "findings"). If a search is required, you must perform a real search using the available tools and base your answer on the retrieved information, not on a guess of what a search might find.
+- **No Background Terminals and Background Subagents:** Do not run subagents and terminal commands in the background; you may not be able to access them after launch.
+- **Python Virtual Environment:** When working with Python, use `.venv/Scripts/Activate.ps1 && {the command you wanted to run}` in the first console call of the session, because the console cannot automatically activate the virtual environment.
+- **Empty Terminal Output:** If a terminal command returns empty output, rerun it with `&& echo ===end===` appended to the command.
 
 ## 4. Code Generation Standards
 
@@ -87,6 +90,7 @@
 - **Style Guide:** Adhere to the Google Python Style Guide.
 - **Docstrings:** Use Google Style Docstrings.
 - Use `tqdm` whenever I ask to add a progress bar.
+- You are not allowed to use scripts and calls with `<<` and `>>>`.
 
 ### 4.5. JavaScript
 - **Style Guide:** Adhere to the Airbnb JavaScript Style Guide.
@@ -106,3 +110,10 @@
 
 ### 4.9. PowerShell
 - **String Concatenation:** When concatenating variables within strings, especially if variable values might contain special characters (e.g., `:`, `(`), use the `-f` format operator for safety. Example: `"{0}: {1}" -f $var1, $var2` instead of `"$var1: $var2"`.
+
+## 5. Subagent
+
+- **Git Policy:** Subagents may use Git only in read-only mode. Allowed examples: `git status`, `git diff`, `git log`, `git show`, `git rev-parse`, `git branch --show-current`, `git ls-files`.
+- **Forbidden Git Mutations:** Subagents must not run any Git command that changes the worktree, index, refs, stash, or history. This includes `git add`, `git checkout`, `git restore`, `git reset`, `git clean`, `git stash`, `git revert`, `git commit`, `git merge`, `git rebase`, `git cherry-pick`, `git am`, `git apply`, `git rm`, `git mv`, and similar commands.
+- **Forbidden Destructive Recovery:** Subagents must not try to "clean up" or "recover" the workspace on their own. It is forbidden to delete files, mass-overwrite files, bulk-revert changes, or run scripted loops that reset or rewrite files outside the explicitly assigned edit scope.
+- **Stop On Unexpected Changes:** If unrelated files change, generated tools touch unexpected files, or the workspace state looks unsafe, stop immediately and report the problem to Senior AI. Do not attempt self-recovery.

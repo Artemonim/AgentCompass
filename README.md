@@ -1,6 +1,9 @@
 # Agent Compass
 
-**A comprehensive set of rules and guidelines for AI-assisted development in Cursor IDE**
+[![English](https://img.shields.io/badge/lang-English-blue.svg)](README.md)
+[![Russian](https://img.shields.io/badge/lang-Русский-lightgrey.svg)](README.ru.md)
+
+**A policy framework, rule set, and operating doctrine for AI-assisted development in Cursor IDE**
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Cursor%20IDE-black.svg)
@@ -12,7 +15,9 @@
 
 ## Overview
 
-Agent Compass is not just another AI prompt — it's a complete **Policy Framework for AI-Assisted Development**. Think of it as a "Constitution" for your AI coding assistant that transforms it from a simple code generator into a disciplined, professional developer who follows best practices, security standards, and architectural principles.
+Agent Compass is not just another AI prompt — it is a complete **Policy Framework for AI-Assisted Development**. Think of it as a constitution for your AI coding assistant: a compact set of rules and operating practices that transform the assistant from a simple code generator into a disciplined developer who follows security standards, project contracts, verification rituals, and architectural principles.
+
+Version 2 expands the original rules with practical guidance for `AGENTS.md`, living `TODO.md` roadmaps, and subagent-based techlead workflows. The main [`README.md`](./README.md) remains English, while the Russian documentation is the author's source of truth for the expanded v2 practices.
 
 ### What Makes Agent Compass Special?
 
@@ -22,12 +27,14 @@ Agent Compass is not just another AI prompt — it's a complete **Policy Framewo
 -   **📝 Smart Commenting Standards**: Enforces Better Comments style and A-temporal documentation
 -   **🎯 Proactive Evaluation**: AI evaluates your technical approaches and suggests alternatives when appropriate
 -   **🔧 Language-Specific Guidelines**: Tailored rules for Python, JavaScript, TypeScript, C#, C++, and PowerShell
+-   **🧭 `AGENTS.md` Contracts**: Guidance for project-specific operating contracts that tell agents what to read, what not to touch, and how to verify work
+-   **✅ Living `TODO.md` Roadmaps**: A format for roadmap-like task files that preserve scope, status, priorities, and architectural context
+-   **🤖 Subagent Techlead Workflow**: Practical delegation, verifier loops, and escalation rules for complex multi-agent work
 
 ## Part of the Artemonim's Agent Tools Ecosystem
 
 Agent Compass is part of the larger **[Artemonim's Agent Tools](https://github.com/Artemonim/AgentTools)** ecosystem:
 
--   **[Agent Docstrings (Archived)](https://github.com/Artemonim/AgentDocstrings)** — File-level structure summaries (legacy)
 -   **[Agent Enforcer 2](https://github.com/Artemonim/AgentEnforcer2)** — Local CI blueprint and reference architecture
 -   **Agent Viewport** _(On Hold / Uncertain)_ — UI markup understanding concept for AI assistants
 
@@ -38,6 +45,17 @@ Agent Compass is part of the larger **[Artemonim's Agent Tools](https://github.c
 -   **Development Teams** looking to standardize AI-assisted development practices
 -   **Anyone** frustrated with unpredictable AI code quality
 
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [`COMPASS.md`](./COMPASS.md) | The English User Rules file intended to be copied into Cursor |
+| [`README.ru.md`](./README.ru.md) | Russian overview and source of truth for v2 documentation |
+| [`docs/ru/AGENTS.md`](./docs/ru/AGENTS.md) | How to write `AGENTS.md` as a project operating contract |
+| [`docs/ru/SUBAGENTS.md`](./docs/ru/SUBAGENTS.md) | Techlead workflow for subagents, verifiers, and QA escalation |
+| [`docs/ru/TODO.md`](./docs/ru/TODO.md) | Living `TODO.md` roadmap format for humans and AI agents |
+| [`templates/cursor.ru/`](./templates/cursor.ru/) | Copyable Cursor techlead rule and subagent cards |
+
 ## Installation
 
 ### For Cursor IDE
@@ -45,7 +63,7 @@ Agent Compass is part of the larger **[Artemonim's Agent Tools](https://github.c
 1. Open Cursor IDE
 2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
 3. Type `View User Rules` and select it
-4. Copypaste the contents of [`COMPASS.md`](./COMPASS.md) from this repository
+4. Copy and paste the contents of [`COMPASS.md`](./COMPASS.md) from this repository
 5. Save and close
 
 ### Verification
@@ -68,6 +86,7 @@ The AI operates as your "Developer" while you remain the "Software Architect" �
 Every AI response ends with a comprehensive report including:
 
 -   **Changes Made**: List of all modifications implemented
+-   **UX**: How the user and system should experience the change, when applicable
 -   **Unfulfilled Tasks**: Any tasks that couldn't be completed
 -   **Manual Changes Required**: Operations requiring your intervention
 -   **Special Attention Required**: Critical aspects needing review
